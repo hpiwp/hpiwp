@@ -1,0 +1,226 @@
+
+body, table, input, button, label, legend, p, li, a, h1, h2, div { 
+    font-family: "Segoe UI", Tahoma, sans-serif;
+     font-size: 15px;
+     }
+
+h1 {
+
+     font-size: 30px;
+      margin: 0 0 6px 0; 
+    }
+
+h2 {
+     font-size: 20px; 
+     color: #19c3a6; 
+     margin-top: 26px; 
+    }
+
+body { 
+    margin: 0; 
+    background: #0f1b2d;
+     color: #e8eef5;
+      direction: rtl; 
+}
+
+a { 
+    color: #19c3a6; 
+}
+
+
+#side { 
+    position: fixed; 
+    top: 0;
+     right: 0;
+      bottom: 0;
+     width: 200px; 
+     background: #091322; 
+     padding-top: 20px; 
+}
+
+#side a {
+     display: block; 
+     padding: 14px 22px;
+      color: #cfd8e3;
+       text-decoration: none;
+        border-right: 4px solid transparent; 
+    }
+
+#side a.active, #side a:hover { 
+    background: #12253d;
+     border-right-color: #19c3a6; 
+     color: #fff; 
+}
+
+#side a.exit {
+     color: #ff8787;
+     margin-top: 30px; 
+    }
+
+#brand {
+     color: #19c3a6;
+      font-size: 20px;
+       font-weight: bold;
+        padding: 0 22px 20px 22px;
+         line-height: 1.5; 
+    }
+
+#page {
+     margin-right: 200px; 
+     padding: 24px 36px; 
+     opacity: 1;
+    }
+
+.hero { 
+    background: linear-gradient(120deg, #12435a, #0f2a47); 
+    border-radius: 12px; 
+    padding: 26px; 
+}
+.cards {
+     display: flex; 
+     justify-content: space-between; 
+      margin-top: 24px;
+     flex-wrap: wrap;
+      gap: 14px; 
+    }
+
+.card {
+     background: #16283f;
+      border-radius: 10px; 
+      padding: 14px 18px;
+       width: 200px;
+        border: 1px solid #19c3a6; 
+    }
+
+.card span {
+     color: #9fb0c3; 
+     font-size: 13px; 
+    }
+
+.panel {
+     background: #16283f;
+      border-radius: 10px;
+       padding: 14px 28px;
+     }
+     
+table {
+     width: 100%; 
+     border-collapse: collapse;
+      background: #16283f; 
+      border-radius: 10px; 
+      overflow: hidden; 
+    }
+th { 
+    background: #19c3a6;
+     color: #07202a; 
+     padding: 10px; 
+}
+td { 
+    padding: 10px;
+     text-align: center;
+      border-bottom: 1px solid #243b57; 
+}
+tbody tr:nth-child(even) {
+     background: #1a2f48; 
+    }
+
+.more { 
+    display: none; 
+    margin-top: 6px; 
+    background: #0f1b2d; 
+    border-radius: 6px; padding: 6px 10px; 
+    color: #ffd43b;
+     font-size: 13px; 
+}
+
+    input[type="text"], input[type="tel"], input[type="email"], input[type="date"] { 
+
+    background: #0f1b2d;
+     color: #fff; 
+     border: 1px solid #3b5878; 
+     border-radius: 6px;
+      padding: 9px;
+       width: 90%;
+ }
+
+input.invalid {
+     border-color: #ff6b6b; 
+    }
+
+fieldset {
+     border: 1px solid #3b5878;
+      border-radius: 10px;
+       margin-top: 24px; 
+    }
+
+legend {
+     color: #19c3a6; 
+     font-weight: bold;
+      padding: 0 8px; 
+    }
+
+.grid {
+     display: flex;
+      flex-wrap: wrap; 
+    }
+
+.fld { 
+    width: 50%; 
+    margin-bottom: 14px; 
+}
+
+
+label {
+     display: block; 
+     margin-bottom: 5px;
+     }
+
+.msg { 
+    display: block;
+     color: #ff8787; 
+     font-size: 13px;
+      min-height: 16px; 
+}
+
+button {
+     background: #19c3a6; 
+     color: #07202a; 
+     font-weight: bold;
+      border: 0; 
+     border-radius: 20px;
+      padding: 10px 28px; cursor: pointer;
+     }
+
+.center {
+     text-align: center; 
+    }
+
+.hidden { 
+    display: none; 
+}
+#summary { 
+    background: #fffbe6;
+     color: #222;
+      border-radius: 12px; 
+      padding: 14px 24px; 
+      margin-top: 24px; 
+}
+#summary table {
+     background: #fff;
+      color: #222;
+     }
+
+#summary td { 
+    border-bottom: 1px solid #ddd; 
+}
+
+#summary h2 {
+     color: #0b7a66; 
+    }
+
+#footer {
+     text-align: center;
+      color: #7f90a5; 
+      margin-top: 40px;
+       font-size: 13px;
+     }

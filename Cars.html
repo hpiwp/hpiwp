@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+<title>أسطول السيارات الأفق لتأجير السيارات</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="side">
+<div id="brand">الأفق<br />لتأجير السيارات</div>
+<a href="AboutUs.html">من نحن</a>
+<a href="Cars.html" class="active">أسطول السيارات</a>
+</div>
+<div id="page">
+<div class="hero">
+    <h1>أسطول السيارات</h1>
+    <p>اختر سيارة أو أكثر ثم اضغط متابعة.</p>
+</div>
+<table id="fleet">
+<thead>
+    <tr><th>الصورة</th>
+        <th>الرمز</th><th
+        th>الموديل</th>
+        <th>سنة الصنع</th>
+        <th>السعر اليومي</th>
+        <th>إظهار التفاصيل</th>
+        <th>اختيار</th></tr>
+    </thead>
+
+    <tbody>
+<tr><td><img src="images/SuzukiSwift.jpg" alt="Suzuki Swift" width="100" height="50" /></td><td>CR-001</td><td><b class="model">Suzuki Swift</b><div class="more">الوقود: بنزين &#8226; ناقل الحركة: عادي &#8226; المقاعد: 5 &#8226; العداد: 28000 كم &#8226; اللون: أبيض</div></td><td>2023</td><td><span class="price">220000</span> ل.س</td><td><input type="checkbox" class="chkInfo" title="التفاصيل" /></td><td><input type="checkbox" class="chkPick" value="CR-001" title="اختيار" /></td></tr>
+<tr><td><img src="images/HyundaiTucson.jpg" alt="Hyundai Tucson" width="100" height="50" /></td><td>CR-002</td><td><b class="model">Hyundai Tucson</b><div class="more">الوقود: بنزين &#8226; ناقل الحركة: أوتوماتيك &#8226; المقاعد: 5 &#8226; العداد: 41000 كم &#8226; اللون: رمادي</div></td><td>2022</td><td><span class="price">450000</span> ل.س</td><td><input type="checkbox" class="chkInfo" title="التفاصيل" /></td><td><input type="checkbox" class="chkPick" value="CR-002" title="اختيار" /></td></tr>
+<tr><td><img src="images/KiaPicanto.jpg" alt="Kia Picanto" width="100" height="50" /></td><td>CR-003</td><td><b class="model">Kia Picanto</b><div class="more">الوقود: بنزين &#8226; ناقل الحركة: أوتوماتيك &#8226; المقاعد: 4 &#8226; العداد: 9000 كم &#8226; اللون: أزرق</div></td><td>2024</td><td><span class="price">170000</span> ل.س</td><td><input type="checkbox" class="chkInfo" title="التفاصيل" /></td><td><input type="checkbox" class="chkPick" value="CR-003" title="اختيار" /></td></tr>
+<tr><td><img src="images/Mazda3.jpg" alt="Mazda 3" width="100" height="50" /></td><td>CR-004</td><td><b class="model">Mazda 3</b><div class="more">الوقود: بنزين &#8226; ناقل الحركة: أوتوماتيك &#8226; المقاعد: 5 &#8226; العداد: 62000 كم &#8226; اللون: أسود</div></td><td>2021</td><td><span class="price">320000</span> ل.س</td><td><input type="checkbox" class="chkInfo" title="التفاصيل" /></td><td><input type="checkbox" class="chkPick" value="CR-004" title="اختيار" /></td></tr>
+<tr><td><img src="images/Peugeot301.jpg" alt="Peugeot 301" width="100" height="50" /></td><td>CR-005</td><td><b class="model">Peugeot 301</b><div class="more">الوقود: ديزل &#8226; ناقل الحركة: عادي &#8226; المقاعد: 5 &#8226; العداد: 88000 كم &#8226; اللون: فضي</div></td><td>2020</td><td><span class="price">210000</span> ل.س</td><td><input type="checkbox" class="chkInfo" title="التفاصيل" /></td><td><input type="checkbox" class="chkPick" value="CR-005" title="اختيار" /></td></tr>
+</tbody>
+
+</table>
+<p class="center">
+    <button type="button" id="goBtn">متابعة</button>
+     <span id="pickCount"></span></p>
+
+<form id="reserve" action="#" method="post" class="hidden">
+<fieldset>
+<legend>بيانات الحجز</legend>
+<div class="grid">
+<div class="fld"><label for="fullName">الاسم الكامل (عربي)</label>
+    <input type="text" id="fullName" maxlength="60" /><span class="msg"></span></div>
+<div class="fld"><label for="nid">الرقم الوطني *</label>
+    <input type="text" id="nid" maxlength="11" /><span class="msg"></span></div>
+<div class="fld"><label for="from">بداية التأجير *</label>
+    <input type="date" id="from" /><span class="msg"></span></div>
+<div class="fld"><label for="to">نهاية التأجير *</label>
+    <input type="date" id="to" /><span class="msg"></span></div>
+<div class="fld"><label for="phone">رقم الموبايل</label><input type="tel" id="phone" maxlength="14" /><span class="msg"></span></div>
+<div class="fld"><label for="mail">البريد الإلكتروني</label>
+    <input type="email" id="mail" /><span class="msg"></span></div>
+</div>
+<p class="center"><button type="submit">إرسال</button></p>
+</fieldset>
+</form>
+<div id="summary" class="hidden"></div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</body>
+</html>
